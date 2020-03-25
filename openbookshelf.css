@@ -1,0 +1,54 @@
+.navbar-header > span {
+  display: none;
+}
+
+.navbar-header {
+  background: url(https://dp.la/static/images/dpla-logo.svg) no-repeat 0 50%;
+  background-size: 200px 50px;
+  width: 100%;
+  height: 50px;
+}
+
+@media (min-width: 768px) {
+  .navbar-header {
+    width: 200px;
+  }
+}
+
+ul.navbar-nav {
+  float: right;
+}
+
+ul.navbar-nav > li:last-child {
+  display: none;
+}
+
+.navbar-default .navbar-nav>li>a, .navbar-collapse .navbar-nav>li>a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+nav, .navbar-collapse {
+  background-color: #0a2937;
+}
+
+.right-column-links {
+  display: none;
+}
+
+ol.breadcrumbs > li:nth-child(1), ol.breadcrumbs > li:nth-child(2) {
+  display: none;
+}
+
+ol.breadcrumbs > li:nth-child(2) + li:before {
+  content: "";
+}
+
+ol.breadcrumbs > li.breadcrumb {
+  background-color: inherit;
+}
+
+.breadcrumbs-or-search-wrapper > nav {
+  background-color: inherit;
+}
