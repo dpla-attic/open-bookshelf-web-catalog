@@ -1,0 +1,23 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "containerDefinitions": [
+    {
+      "name": "patron-web",
+      "image": "nypl/patron-web:1.0.0",
+      "environment": [
+        {
+          "name": "SIMPLIFIED_CATALOG_BASE",
+          "value": "http://openbookshelf.dp.la/OB/groups/"
+        }
+      ],
+      "essential": true,
+      "memory": 1536,
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "containerPort": 3000
+        }
+      ]
+    }
+  ]
+}
